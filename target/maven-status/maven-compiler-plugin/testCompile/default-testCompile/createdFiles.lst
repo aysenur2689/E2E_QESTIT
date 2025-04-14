@@ -1,0 +1,6 @@
+com\qestit\pages\ServicePage.class
+com\qestit\runners\TestRunner.class
+com\qestit\pages\BasePage.class
+com\qestit\steps\ServiceSteps.class
+com\qestit\hooks\Hooks.class
+com\qestit\locators\ServicePageLocators.class
