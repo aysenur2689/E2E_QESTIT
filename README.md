@@ -1,32 +1,39 @@
-# 🚀 QESTIT Test Automation Framework
-
 <div align="center">
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
-![Cucumber](https://img.shields.io/badge/Cucumber-23D96C?style=for-the-badge&logo=cucumber&logoColor=white)
-![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
-![Allure](https://img.shields.io/badge/Allure-yellow?style=for-the-badge&logo=allure&logoColor=white)
+```
+ ██████╗ ███████╗███████╗████████╗██╗████████╗
+██╔═══██╗██╔════╝██╔════╝╚══██╔══╝██║╚══██╔══╝
+██║   ██║█████╗  ███████╗   ██║   ██║   ██║   
+██║▄▄ ██║██╔══╝  ╚════██║   ██║   ██║   ██║   
+╚██████╔╝███████╗███████║   ██║   ██║   ██║   
+ ╚══▀▀═╝ ╚══════╝╚══════╝   ╚═╝   ╚═╝   ╚═╝   
+```
+
+<h1>Test Automation Framework</h1>
+
+[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com)
+[![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)](https://www.selenium.dev)
+[![Cucumber](https://img.shields.io/badge/Cucumber-23D96C?style=for-the-badge&logo=cucumber&logoColor=white)](https://cucumber.io)
+[![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)](https://maven.apache.org)
+[![Allure](https://img.shields.io/badge/Allure-yellow?style=for-the-badge&logo=allure&logoColor=white)](https://qameta.io/allure-report)
+
+<p align="center">
+  <a href="#overview">Overview</a> •
+  <a href="#features">Features</a> •
+  <a href="#tech-stack">Tech Stack</a> •
+  <a href="#setup--installation">Installation</a> •
+  <a href="#running-tests">Usage</a> •
+  <a href="#reporting">Reports</a>
+</p>
 
 </div>
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Test Scenarios](#test-scenarios)
-- [Setup & Installation](#setup--installation)
-- [Running Tests](#running-tests)
-- [Reporting](#reporting)
-- [Best Practices](#best-practices)
-
-## 🎯 Overview
+## 📋 Overview
 
 This project implements an end-to-end test automation framework for the QESTIT web application. It focuses on testing the Services section, particularly the Test Logiciel and Automatisation des tests functionalities.
 
-## ✨ Features
+<details>
+<summary>🎯 Key Features</summary>
 
 - 🔄 Page Object Model (POM) Design Pattern
 - 🥒 BDD with Cucumber
@@ -35,15 +42,30 @@ This project implements an end-to-end test automation framework for the QESTIT w
 - ⏱️ Smart Wait Strategies
 - 📸 Automatic Screenshot Capture on Failure
 
+</details>
+
 ## 🛠️ Tech Stack
 
-- **Java 11**: Programming Language
-- **Selenium WebDriver**: Web Automation
-- **Cucumber**: BDD Framework
-- **Maven**: Build Tool
-- **Allure**: Test Reporting
-- **WebDriverManager**: Browser Driver Management
-- **AspectJ**: AOP for Allure Integration
+<table>
+  <tr>
+    <td align="center" width="160">
+      <img src="https://www.svgrepo.com/show/303388/java-4-logo.svg" width="48" height="48" alt="Java" />
+      <br>Java 11
+    </td>
+    <td align="center" width="160">
+      <img src="https://raw.githubusercontent.com/detain/svg-logos/master/svg/selenium-logo.svg" width="48" height="48" alt="Selenium" />
+      <br>Selenium
+    </td>
+    <td align="center" width="160">
+      <img src="https://raw.githubusercontent.com/cucumber/cucumber-js/master/docs/images/cucumber.png" width="48" height="48" alt="Cucumber" />
+      <br>Cucumber
+    </td>
+    <td align="center" width="160">
+      <img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_maven.svg" width="48" height="48" alt="Maven" />
+      <br>Maven
+    </td>
+  </tr>
+</table>
 
 ## 📁 Project Structure
 
@@ -75,7 +97,8 @@ E2E_QESTIT/
 
 ## 📝 Test Scenarios
 
-### Service Navigation Feature
+<details>
+<summary>Service Navigation Feature</summary>
 
 ```gherkin
 Feature: Navigation des Services QESTIT
@@ -91,6 +114,8 @@ Feature: Navigation des Services QESTIT
     When je clique sur Automatisation des tests
 ```
 
+</details>
+
 ## 🚀 Setup & Installation
 
 1. Ensure you have Java 11 installed
@@ -100,43 +125,54 @@ Feature: Navigation des Services QESTIT
 
 ## ▶️ Running Tests
 
-### Using Batch File
+<details>
+<summary>Using Batch File</summary>
 
 ```bash
 .\run-tests.bat
 ```
 
-### Using Maven
+</details>
+
+<details>
+<summary>Using Maven</summary>
 
 ```bash
 mvn clean test
 ```
 
+</details>
+
 ## 📊 Reporting
 
 The framework uses Allure for comprehensive test reporting:
 
-### Generate Report
+<details>
+<summary>Generate & View Reports</summary>
 
+### Generate Report
 ```bash
 mvn allure:report
 ```
 
 ### View Report
-
 ```bash
 mvn allure:serve
 ```
 
 ### Report Features
-
 - 📈 Test Execution Timeline
 - 🔍 Detailed Step Breakdown
 - 📸 Failure Screenshots
 - 📊 Statistics Dashboard
 - 🏷️ Categories View
 
+</details>
+
 ## ✅ Best Practices
+
+<details>
+<summary>Click to expand</summary>
 
 - **Page Object Model**: Separates test logic from page elements
 - **Base Page Class**: Common reusable methods
@@ -144,6 +180,8 @@ mvn allure:serve
 - **Screenshot Capture**: Automatic capture on test failure
 - **Clean Code**: Well-organized and documented codebase
 - **BDD Approach**: Clear and business-readable test scenarios
+
+</details>
 
 ## 🔄 Recent Updates
 
@@ -167,5 +205,11 @@ This project is licensed under the MIT License - see the LICENSE file for detail
   <br>
   <p>
     <sub>Built with ❤️ by QESTIT Team</sub>
+  </p>
+  <br>
+  <p>
+    <a href="https://qestit.com">
+      <img src="https://img.shields.io/badge/Visit-QESTIT-blue?style=for-the-badge&logo=globe" alt="Visit QESTIT">
+    </a>
   </p>
 </div>
